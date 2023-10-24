@@ -1,0 +1,23 @@
+body {
+  background: #ddd;
+}
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  perspective: 1500px;
+}
+.box-area {
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 30s initial linear;
+  border: 20px solid blue;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate3d(0, 0, 0, 0);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
