@@ -21,6 +21,13 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .box {
+    width: 150px;
+    height: 150px;
+  }
+}
+
 .box {
   position: absolute;
   width: 300px;
